@@ -1,0 +1,271 @@
+/* CSS BY NAME */
+
+/* IMPORTED FONTS */
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --light-blue: rgb(107, 143, 231);
+    --med-blue: rgb(64, 52, 240);
+    --dark-blue: rgb(72, 79, 183);
+    --yellow: rgb(233, 187, 88);
+    --magenta: rgb(217, 82, 111);
+    --black: rgb(30, 30, 30);
+    --header-font: 'Kavoon', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 40px;
+    font-family: var(--body-font);
+    background-color: var(--light-blue);
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: var(--header-font);
+    color: white;
+    font-size: 1.6rem;
+}
+
+h3 {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header > p {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#menu {
+    background-color: var(--yellow);
+    color: var(--black);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+#menu h2 {
+    font-family: var(--body-font);
+    color: var(--black);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+#menu li {
+    background-color: white;
+    margin: 5px 15px 10px 15px;
+    padding: 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--med-blue);
+}
+
+#services, #prices , footer {
+    background-color: var(--dark-blue);
+    padding: 10px;
+}
+
+#why, #firststep {
+    background-color: var(--magenta);
+    padding: 10px;
+}
+
+#services > div {
+    background-color: white;
+    margin: 15px 10px;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.3rem;
+}
+
+#services > h3:first-of-type {
+    margin-top: 5px;
+}
+
+#services h4 {
+    color: var(--dark-blue);
+    font-weight: bolder;
+    padding: 5px 0px;
+}
+
+#why > ul {
+    margin: 10px 0px;
+}
+
+#why li{
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+#why li:nth-of-type(1) {
+    background-color: lightseagreen;
+}
+#why li:nth-of-type(2) {
+    background-color: rgb(121, 117, 255);
+}
+#why li:nth-of-type(3) {
+    background-color: var(--yellow);
+}
+#why li:nth-of-type(4) {
+    background-color: white;
+}
+
+#why li:nth-of-type(1), #why li:nth-of-type(3){
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#why li:nth-of-type(2), #why li:nth-of-type(4){
+    margin-left: 5px;
+}
+
+#why li:nth-of-type(3), #why li:nth-of-type(4){
+    margin-top: 15px;
+}
+
+#prices > h3 {
+    padding: 10px 0px;
+}
+
+#prices > table {
+    margin: auto;
+    border: 2px solid var(--yellow);
+    font-size: .9rem;
+}
+
+#prices thead {
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: bold;
+    th{
+        padding: 10px;
+    }
+}
+
+#prices tbody {
+    background-color: white;
+    td {
+        padding: 10px;
+        border: 2px solid var(--yellow);
+    }
+}
+
+#firststep {
+    color: white;
+    line-height: 1.3rem;
+}
+
+#firststep > p {
+    padding-top: 10px;
+}
+
+#firststep > p > a {
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display:inline-block;
+    width: 390px;
+    background-color: white;
+    margin: 0 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px var(--black);
+}
+
+footer {
+    padding: 40px 30px;
+}
+
+footer > p , footer a {
+    display: inline-block;
+    font-size: .7rem;
+    color: white;
+    text-align: center;
+    width: 150px;
+}
+
+footer > p:first-of-type {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+footer > p > a {
+    margin-right: 30px;
+    margin-left: 15px;
+}
+
