@@ -1,6 +1,7 @@
-/* CSS BY NAME */
+/* CSS BY Brittani Ericksen */
 
 /* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS RESET */
 html, body, div, span, applet, object, iframe,
@@ -49,14 +50,15 @@ table {
 
 /* ROOT VARIABLES */
 :root {
-    --light-blue: rgb(107, 143, 231);
-    --med-blue: rgb(64, 52, 240);
-    --dark-blue: rgb(72, 79, 183);
-    --yellow: rgb(233, 187, 88);
-    --magenta: rgb(217, 82, 111);
-    --black: rgb(30, 30, 30);
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57; 
+    --pink:#D9526F;
+    --dark-gray:#1E1E1E; 
+    --white: #ffffff; 
     --header-font: 'Kavoon', serif;
-    --body-font: 'Roboto', sans-serif;
+    --body-font: 'Inter', sans-serif;
 }
 
 /* GLOBAL STYLES (mobile first/small) */
@@ -65,11 +67,11 @@ body {
     margin: auto;
     margin-bottom: 40px;
     font-family: var(--body-font);
-    background-color: var(--light-blue);
+    background-color: var(--lavender);
 }
 
 header {
-    background-color: var(--dark-blue);
+    background-color: var(--purple);
     color: white;
     text-align: center;
     padding-top: 30px;
@@ -78,20 +80,24 @@ header {
 
 h1 {
     font-family: var(--header-font);
-    font-size: 3rem;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 h2 {
     font-family: var(--header-font);
     color: white;
-    font-size: 1.6rem;
+    font-size: 2em;
 }
 
 h3 {
     color: var(--yellow);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.15em;
 }
 
 header > p {
@@ -101,7 +107,7 @@ header > p {
 
 #menu {
     background-color: var(--yellow);
-    color: var(--black);
+    color: var(--dark-gray);
     text-transform: uppercase;
     text-align: center;
     padding: 10px 5px;
@@ -109,10 +115,10 @@ header > p {
 
 #menu h2 {
     font-family: var(--body-font);
-    color: var(--black);
+    color: var(--dark-gray);
     font-weight: bolder;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.5em;
 }
 
 #menu li {
@@ -125,16 +131,16 @@ header > p {
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    color: var(--med-blue);
+    color: var(--purple);
 }
 
 #services, #prices , footer {
-    background-color: var(--dark-blue);
+    background-color: var(--purple);
     padding: 10px;
 }
 
 #why, #firststep {
-    background-color: var(--magenta);
+    background-color: var(--pink);
     padding: 10px;
 }
 
@@ -151,7 +157,7 @@ header > p {
 }
 
 #services h4 {
-    color: var(--dark-blue);
+    color: var(--purple);
     font-weight: bolder;
     padding: 5px 0px;
 }
@@ -170,16 +176,16 @@ header > p {
     font-weight: bold;
 }
 #why li:nth-of-type(1) {
-    background-color: lightseagreen;
+    background-color: var(--teal);
 }
 #why li:nth-of-type(2) {
-    background-color: rgb(121, 117, 255);
+    background-color: var(--lavender);
 }
 #why li:nth-of-type(3) {
     background-color: var(--yellow);
 }
 #why li:nth-of-type(4) {
-    background-color: white;
+    background-color: var(--white);
 }
 
 #why li:nth-of-type(1), #why li:nth-of-type(3){
@@ -233,7 +239,7 @@ header > p {
 
 #firststep > p > a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--dark-gray);
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -244,7 +250,7 @@ header > p {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 10px;
-    box-shadow: 5px 5px 2px var(--black);
+    box-shadow: 5px 5px 2px var(--dark-gray);
 }
 
 footer {
